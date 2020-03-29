@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_river.mk
+    $(LOCAL_DIR)/superior_river.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_river-eng \
-    lineage_river-user \
-    lineage_river-userdebug
+    superior_river-eng \
+    superior_river-user \
+    superior_river-userdebug
