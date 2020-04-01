@@ -23,6 +23,7 @@ DEVICE_PATH := device/motorola/river
 TARGET_OTA_ASSERT_DEVICE := river
 
 # Kernel
+# BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := river_defconfig
 
 # NFC
