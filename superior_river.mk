@@ -34,6 +34,9 @@ PRODUCT_MODEL := moto g(7)
 # Target Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Maintainer SuperiorOS for River
+        ro.superior.maintainer=tailan_cunha
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=river \
         PRIVATE_BUILD_DESC="river-user 9 PPOS29.114-134-4 fe214 release-keys"
