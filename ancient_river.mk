@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The SuperiorOS Open Source Project
+# Copyright (C) 2019 The LineageOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit some common Superior stuff
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common Ancient stuff
+$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Inherit from river device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,14 +28,14 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := river
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_NAME := superior_river
+PRODUCT_NAME := ancient_river
 PRODUCT_MODEL := moto g(7)
 
-# Target Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
 
-# Maintainer SuperiorOS for River
-        ro.superior.maintainer=tailan_cunha
+IS_PHONE := true
+
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=river \
