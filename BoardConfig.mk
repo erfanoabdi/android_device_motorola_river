@@ -26,6 +26,7 @@ TARGET_OTA_ASSERT_DEVICE := river
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
+# BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := river_defconfig
 
 # NFC
